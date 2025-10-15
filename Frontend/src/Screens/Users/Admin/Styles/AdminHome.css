@@ -1,0 +1,91 @@
+
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+.admin-home-container {
+    padding: 1rem;
+  }
+  
+  .home-title {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .card-container {
+    margin-left: 90px;
+  }
+  
+  .card {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+  
+  .card-content {
+    display: flex;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card-icon {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .restaurant-icon {
+    background-color: #ff4524;
+  }
+  
+  .messages-icon {
+    background-color: #4caf50;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 55px; /* Make sure this is large enough */
+  }
+  
+  .card-info {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 17px;
+  }
+  
+  .card-text {
+    font-weight: bold;
+    color: #20609c;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .restaurant-count {
+    font-size: 24px;
+  }
+  
+  .message-count {
+    font-size: 24px;
+  }
+
+  
+ 

@@ -1,0 +1,87 @@
+.AdminViewMessages-heading {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.AdminViewMessages-search-container {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.AdminViewMessages-search-input-container {
+  position: relative;
+  flex: 1;
+}
+
+.AdminViewMessages-search-input {
+  padding: 8px 8px 8px 36px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.AdminViewMessages-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 16px;
+}
+
+.AdminViewMessages-no-records{
+  text-align: center;
+}
+
+.AdminViewMessages-table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  max-width: 70%;
+  display: block;
+  margin-top: 20px;
+}
+.AdminViewMessages-no-contacts {
+  text-align: center;
+  font-size: 16px;
+  color: #181818;
+  margin: 20px;
+}
+
+
+.AdminViewMessages-table {
+  border-collapse: collapse;
+  min-width: 600px;
+  width: 100%;
+}
+
+.AdminViewMessages-th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #35353c;
+  color: #ffd800;
+  text-align: left;
+  font-weight: bold;
+}
+
+.AdminViewMessages-td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.AdminViewMessages-action-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

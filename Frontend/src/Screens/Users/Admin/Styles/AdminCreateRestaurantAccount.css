@@ -1,0 +1,68 @@
+.admin-create-restaurant-account-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #35353c;
+    color: #ffd800;
+    max-width: 550px;
+    margin: 0;
+}
+
+.admin-create-restaurant-account-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.admin-create-restaurant-account-form {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    gap: 20px; /* Space between the items */
+}
+
+.admin-create-restaurant-account-form-group {
+    flex: 1 1 45%; /* Grow and shrink with a base width of 45% */
+    margin-bottom: 15px;
+}
+
+.admin-create-restaurant-account-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffd800;
+}
+
+.admin-create-restaurant-account-form-control {
+    width: 100%;
+    padding: 5px;
+    background-color: #fff;
+    color: #35353c;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.admin-create-restaurant-account-btn-primary {
+    background-color: #ffd800;
+    color: #35353c;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.admin-create-restaurant-account-btn-primary:hover {
+    background-color: #e0c700;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.admin-create-restaurant-account-error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.admin-create-restaurant-account-success {
+    color: green;
+    margin-bottom: 15px;
+}

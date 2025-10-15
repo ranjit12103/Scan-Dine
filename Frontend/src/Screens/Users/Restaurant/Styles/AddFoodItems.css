@@ -1,0 +1,88 @@
+/* Container for the entire food item addition form */
+.add-food-items-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0; /* No border radius for the form container */
+    background-color: #35353c; /* Dark background color for the form */
+    color: #ffd800; /* Text color for the form */
+    max-width: 700px;
+    margin: 0;
+}
+
+/* Title for the food item addition form */
+.add-food-items-title {
+    font-size: 24px; /* Font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Flexbox layout for the food item addition form rows */
+.add-food-items-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between rows */
+}
+
+/* Flexbox layout for each row */
+.add-food-items-form-row {
+    display: flex;
+    gap: 15px; /* Space between items in the row */
+}
+
+/* Grouping for form controls */
+.add-food-items-form-group {
+    flex: 1; /* Make form groups grow to fill space */
+}
+
+/* Full-width grid item for description */
+.add-food-items-form-group.full-width {
+    flex: 1 1 100%; /* Make the description field span the full width */
+}
+
+/* Label styling for form controls */
+.add-food-items-form-group label {
+    display: block;
+    margin-bottom: 5px; /* Space below the label */
+    color: #ffd800; /* Label color to match the theme */
+}
+
+/* Styling for form input fields and dropdowns */
+.add-food-items-form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff; /* White background for input fields */
+    color: #35353c; /* Dark text color for input fields */
+    border: 1px solid #ddd; /* Light border for input fields */
+    border-radius: 0; /* No border radius for input fields */
+}
+
+/* Styling for the submit button */
+.add-food-items-btn-primary {
+    background-color: #ffd800; /* Button background color */
+    color: #35353c; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0; /* No border radius for button */
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.add-food-items-btn-primary:hover {
+    background-color: #e0c700; /* Slightly darker yellow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Error message styling */
+.add-food-items-error {
+    color: red;
+    margin-bottom: 15px; /* Space below the error message */
+}
+
+/* Success message styling */
+.add-food-items-success {
+    color: green;
+    margin-bottom: 15px; /* Space below the success message */
+}

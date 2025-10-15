@@ -1,0 +1,294 @@
+/* Heading for the food items view */
+.ViewFoodItems-heading {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Container for the search input */
+.ViewFoodItems-search-container {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Input container for search */
+.ViewFoodItems-search-input-container {
+  position: relative;
+  flex: 1;
+}
+
+/* Search input field */
+.ViewFoodItems-search-input {
+  padding: 8px 8px 8px 36px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Icon inside the search input field */
+.ViewFoodItems-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 16px;
+}
+
+/* Container for food item cards */
+.ViewFoodItems-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Card for each food item */
+.ViewFoodItems-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(33.333% - 20px); /* 3 cards per row with space between */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative;
+}
+
+/* Type indicator */
+.ViewFoodItems-card-type-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Vegetarian indicator */
+.ViewFoodItems-card-type-indicator.Veg {
+  background-color: green;
+}
+
+/* Non-Vegetarian indicator */
+.ViewFoodItems-card-type-indicator.Non-Veg {
+  background-color: red;
+}
+
+/* Card image */
+.ViewFoodItems-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Price overlay */
+.ViewFoodItems-card-price-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Card content */
+.ViewFoodItems-card-content {
+  padding: 15px;
+  background-color: white;
+}
+
+/* Card name */
+.ViewFoodItems-card-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+/* Card category */
+.ViewFoodItems-card-category {
+  margin: 0;
+  color: #666;
+}
+
+/* Card description */
+.ViewFoodItems-card-description {
+  margin: 10px 0 0;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Hover effect for card */
+.ViewFoodItems-card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal overlay to cover the screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker background for more contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for more prominence */
+  text-align: center; /* Center align text */
+  width: 500px; /* Increased width for a larger modal */
+  max-width: 90%; /* Responsive max width */
+}
+
+/* Modal title */
+.modal-content h4 {
+  margin: 0 0 20px;
+  font-size: 22px; /* Larger font size for title */
+  color: #333;
+}
+
+/* Confirmation message */
+.modal-message {
+  font-size: 16px; /* Font size for message */
+  color: #333; /* Text color for better readability */
+  margin-bottom: 30px; /* Margin below the message */
+}
+
+/* Modal form fields */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased space between rows */
+}
+
+/* Modal form group */
+.modal-form-group {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increased space between label and input */
+}
+
+.modal-form-group label {
+  flex: 0 0 180px; /* Increased width for labels */
+  text-align: right; /* Align text to the right */
+  font-weight: bold; /* Bold text for better readability */
+}
+
+.modal-form-group input,
+.modal-form-group textarea,
+.modal-form-group select {
+  flex: 1; /* Fill the remaining space */
+  padding: 10px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Larger font size for inputs */
+}
+.error-message-viewfood {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 0.25em;
+}
+
+
+/* Modal buttons container */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px; /* Margin for spacing */
+}
+
+/* Modal buttons */
+.modal-confirm-button,
+.modal-cancel-button,
+.modal-edit-button {
+  padding: 12px 24px; /* Larger padding for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for buttons */
+  color: #fff;
+  flex: 1; /* Make buttons flexible in width */
+  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Confirm (Delete) button */
+.modal-confirm-button {
+  background: #d9534f; /* Red color for delete */
+}
+
+/* Cancel button */
+.modal-cancel-button {
+  background: #5bc0de; /* Blue color for cancel */
+}
+
+/* Edit button */
+.modal-edit-button {
+  background: #c9302c; /* red color for edit */
+}
+
+/* Hover effects for buttons */
+.modal-confirm-button:hover {
+  background: #c9302c; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modal-cancel-button:hover {
+  background: #31b0d5; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modal-edit-button:hover {
+  background: #c9302c; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styles for delete icon */
+.ViewFoodItems-delete-icon,
+.ViewFoodItems-edit-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #d9534f; /* Red background for delete icon */
+  color: #fff; /* White color for icon */
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px; /* Slightly larger font size */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Edit icon specific styles */
+.ViewFoodItems-edit-icon {
+  background: #5bc0de; /* Blue background for edit icon */
+  right: 50px; /* Adjust position to avoid overlap with delete icon */
+}
+
+/* Hover effects for icons */
+.ViewFoodItems-delete-icon:hover {
+  background: #c9302c; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.ViewFoodItems-edit-icon:hover {
+  background: #31b0d5; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}

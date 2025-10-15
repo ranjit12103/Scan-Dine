@@ -1,0 +1,203 @@
+/* Heading for the category view */
+.ViewCategory-heading {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Container for the search input */
+.ViewCategory-search-container {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Input container for search */
+.ViewCategory-search-input-container {
+  position: relative;
+  flex: 1;
+}
+
+/* Search input field */
+.ViewCategory-search-input {
+  padding: 8px 8px 8px 36px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Icon inside the search input field */
+.ViewCategory-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 16px;
+}
+
+/* Table container */
+.ViewCategory-table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  max-width: 70%;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Table styling */
+.ViewCategory-table {
+  border-collapse: collapse;
+  width: 100%; /* Ensure the table takes full width of its container */
+}
+
+/* Table header styling */
+.ViewCategory-th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #35353c;
+  color: #ffd800;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table data styling */
+.ViewCategory-td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Action button styling */
+.ViewCategory-action-button {
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/* Edit button styling */
+.ViewCategory-edit-button {
+  background-color: #4caf50; /* Green */
+}
+
+/* Delete button styling */
+.ViewCategory-delete-button {
+  background-color: #ff4d4d; /* Red */
+}
+
+/* Modal overlay to cover the screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker background for more contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 30px; /* Increased padding for more space */
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for more prominence */
+  text-align: center; /* Center align text */
+  width: 500px; /* Increased width for a larger modal */
+  max-width: 90%; /* Responsive max width */
+}
+
+/* Modal title */
+.modal-content h4 {
+  margin: 0 0 20px;
+  font-size: 22px; /* Larger font size for title */
+  color: #333;
+}
+
+/* Confirmation message */
+.modal-message {
+  font-size: 16px; /* Font size for message */
+  color: #333; /* Text color for better readability */
+  margin-bottom: 30px; /* Margin below the message */
+}
+
+/* Modal form fields */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased space between rows */
+}
+
+/* Modal form input */
+.modal-form input {
+  padding: 10px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Larger font size for inputs */
+}
+
+/* Modal buttons container */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px; /* Margin for spacing */
+}
+
+/* Modal buttons */
+.modal-confirm-button,
+.modal-cancel-button,
+.modal-edit-button {
+  padding: 12px 24px; /* Larger padding for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for buttons */
+  color: #fff;
+  flex: 1; /* Make buttons flexible in width */
+  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Confirm (Delete) button */
+.modal-confirm-button {
+  background: #d9534f; /* Red color for delete */
+}
+
+/* Cancel button */
+.modal-cancel-button {
+  background: #5bc0de; /* Blue color for cancel */
+}
+
+/* Edit button */
+.modal-edit-button {
+  background: #d9534f; /* Red color for Edit */
+}
+
+/* Hover effects for buttons */
+.modal-confirm-button:hover {
+  background: #c9302c; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modal-cancel-button:hover {
+  background: #31b0d5; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modal-edit-button:hover {
+  background: #d9534f; /* Red color for Edit */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+

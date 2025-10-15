@@ -1,0 +1,59 @@
+/* Container for the entire profile view */
+.admin-profile-container {
+    padding: 20px;
+  }
+  
+  /* Title for the profile view section */
+  .admin-profile-title {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  /* Flex container for the profile card (no centering) */
+  .admin-profile-card-container {
+    /* Removed flex properties to align card to the left */
+  }
+  
+  /* Style for the profile card */
+  .admin-profile-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    background-color: #35353c; /* Updated background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #ffd800; /* Updated text color */
+  }
+  
+  /* Header section inside the card for profile information */
+  .admin-profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the profile picture */
+  .admin-profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  /* Style for the profile card title (name) */
+  .admin-profile-card-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Style for text inside the card */
+  .admin-profile-card-text {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

@@ -1,0 +1,87 @@
+/* Heading for the message view */
+.RestaurantViewMessages-heading {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Container for the search input */
+.RestaurantViewMessages-search-container {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Input container for search */
+.RestaurantViewMessages-search-input-container {
+  position: relative;
+  flex: 1;
+}
+
+/* Search input field */
+.RestaurantViewMessages-search-input {
+  padding: 8px 8px 8px 36px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Icon inside the search input field */
+.RestaurantViewMessages-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 16px;
+}
+
+/* Table container */
+.RestaurantViewMessages-table-container {
+
+
+  overflow-x: auto;
+  border-radius: 8px;
+  max-width: 70%;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Table styling */
+.RestaurantViewMessages-table {
+  border-collapse: collapse;
+  width: 100%; /* Ensure the table takes full width of its container */
+}
+
+/* Table header styling */
+.RestaurantViewMessages-th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #35353c;
+  color: #ffd800;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table data styling */
+.RestaurantViewMessages-td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Action button styling */
+.RestaurantViewMessages-action-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
