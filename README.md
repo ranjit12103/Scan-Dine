@@ -100,7 +100,7 @@ Scan-Dine/
 ├── .gitignore
 ├── package.json
 └── README.md
-
+.
 🚀 Getting Started
 Prerequisites
 
